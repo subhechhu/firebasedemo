@@ -69,7 +69,9 @@ public class DbActivity extends AppCompatActivity {
             myRefAddress.setValue(address);
 
 
-            // Clear all the fields after storing
+            // hello world
+
+            // Clear all the fields after storin
             textInputEditText_phone.setText("");
             textInputEditText_name.setText("");
             textinputEditText_address.setText("");
