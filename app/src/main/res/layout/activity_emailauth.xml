@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="50dp"
+    android:paddingVertical="150dp">
+
+    <EditText
+        android:id="@+id/editTextTextPersonEmail"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:layout_marginVertical="20dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/login" />
+
+    <ProgressBar
+        android:id="@+id/progressBarLogin"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:onClick="signup"
+            android:text="@string/new_user" />
+</LinearLayout>

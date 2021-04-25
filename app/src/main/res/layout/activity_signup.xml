@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="50dp"
+    android:paddingVertical="100dp"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/username"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonAge"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/age"
+        android:layout_marginVertical="20dp"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonEmail"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"
+        android:ems="10"
+        android:layout_marginVertical="20dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:importantForAutofill="no" />
+
+    <ProgressBar
+        android:id="@+id/progressBarSignup"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="40dp"
+        android:text="@string/signup" />
+
+</LinearLayout>

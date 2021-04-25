@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_db"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="firebasedb"
+        android:text="@string/firebase_db" />
+
+    <Button
+        android:id="@+id/button_auth_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="authEmail"
+        android:text="@string/email_authentication" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.google.android.gms.common.SignInButton>
+
+    <ProgressBar
+        android:id="@+id/progressBar_mainActivity"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button_firestore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="firestoreDB"
+        android:text="@string/firestore" />
+
+</LinearLayout>
