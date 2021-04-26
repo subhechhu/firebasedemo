@@ -48,6 +48,15 @@
             android:hint="@string/enter_address"/>
     </com.google.android.material.textfield.TextInputLayout>
 
+    <ProgressBar
+        android:layout_marginTop="30dp"
+        android:id="@+id/progressBar_db"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        android:layout_height="wrap_content" />
+
     <Button
         android:id="@+id/button_save"
         android:layout_width="wrap_content"

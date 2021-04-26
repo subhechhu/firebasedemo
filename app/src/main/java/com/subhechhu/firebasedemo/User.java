@@ -2,8 +2,7 @@ package com.subhechhu.firebasedemo;
 
 public class User {
 
-
-    String name, email, age;
+    private String name, email, age;
 
     public String getName() {
         return name;

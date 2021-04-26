@@ -28,6 +28,8 @@ import com.google.firebase.messaging.FirebaseMessaging;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Check Assets for adding google-services.json manually
+
     // https://firebase.google.com/docs/cloud-messaging/android/client ==> Set up cloud messaging from scratch
     // https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages ==> Firebase Cloud Messaging structure of notification payload
 
